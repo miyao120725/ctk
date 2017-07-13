@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>关于我们</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/help.css">
+<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!--响应式导航-->
+<!--<div class="navbar navbar-default";>&lt;!&ndash;整个导航条,贯穿整个页面的背景条&ndash;&gt;-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header navbar_lj";>&lt;!&ndash;导航条的头部,包含logo和折叠指示&ndash;&gt;-->
+            <!--&lt;!&ndash;logo&ndash;&gt;-->
+            <!--<a href="" class="navbar-brand"><img src="img/logo_2.png" alt=""></a>-->
+            <!--&lt;!&ndash;折叠菜单的触发按钮(汉堡包)&ndash;&gt;-->
+            <!--<a class="navbar-toggle glyphicon glyphicon-list btn btn-link" style="padding:0 0 2px 0; margin:20px;" data-toggle="collapse" data-target="#navbar_1"></a>-->
+             <!--<a class="navbar-toggle glyphicon glyphicon-user btn btn-link" style="padding:0 0 2px 0; margin:20px;"  data-toggle="modal" data-target="#myModal1" ></a>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="navbar_1">&lt;!&ndash;导航的具体内容:展示的或者折叠的具体内容&ndash;&gt;-->
+            <!--<ul class="nav navbar-nav navbar-nav_lj">-->
+                <!--<li><a href="index.html">首页</a></li>-->
+                <!--<li><a href="daikuan1.html">我要贷款</a></li>-->
+                <!--<li><a href="personal.html">个人中心</a></li>-->
+                <!--<li><a href="about1.html">关于我们</a></li>-->
+                <!--<li class="active"><a href="#">帮助中心</a></li>-->
+                <!--&lt;!&ndash;添加导航栏目请直接添加以下标签&#45;&#45;<li><a href="">新增栏目</a></li>&#45;&#45;&ndash;&gt;-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-nav_lj navbar-right">-->
+                <!--<li><a href="javascript:;" data-toggle="modal" data-target="#myModal1">登录</a></li>-->
+                <!--<li><a href="javascript:;"  data-toggle="modal" data-target="#myModal2">注册</a></li>-->
+                <!--<li><a href="javascript:;" class="glyphicon glyphicon-earphone navbar-nav_lj_del">96512</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="modal fade loginModal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+    <!--<div class="modal-dialog" role="document">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <!--<h2 class="modal-title" id="myModalLabel">登&nbsp;&nbsp;&nbsp;录</h2>-->
+            <!--</div>-->
+            <!--<div class="modal-body login_body">-->
+                <!--<span></span>-->
+                <!--<div class="form-group">-->
+                    <!--<span class="uspan"></span>-->
+                    <!--<input type="text" class="form-control" id="username" placeholder="请输入您的手机号码/邮箱">-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<span class="pspan"></span>-->
+                    <!--<input type="password" class="form-control" id="pswd" placeholder="请输入您的登陆密码">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<div class="from-group login_from_group">-->
+                    <!--<button type="button" class="btn btn-info">登&nbsp;&nbsp;&nbsp;录</button>-->
+                    <!--<p>没有账户？<a href="javascript:;" class="RegisterNow"  data-toggle="modal" data-target="#myModal2,#myModal1">立即注册</a></p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;注册Modal&ndash;&gt;-->
+<!--<div class="modal fade registerModal" id="myModal2" tabindex="1" role="dialog" aria-labelledby="myModalLabel2">-->
+    <!--<div class="modal-dialog zhuce_modal" role="document">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <!--<h2 class="modal-title" id="myModalLabe12">立即注册</h2>-->
+            <!--</div>-->
+            <!--<div class="modal-body login_body">-->
+                <!--<span class="valispan"></span>-->
+                <!--<div class="form-group">-->
+                    <!--<span class="phspan"></span>-->
+                    <!--<input type="tel"  class="form-control" id = "tel" name = "tel" placeholder="请输入您的手机号码" onblur="valiPhone(this)">-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<span class="pwdspan"></span>-->
+                    <!--<input type="password"  class="form-control" id="pwd"  placeholder="请输入密码,6-16位字符"onblur="valiPwd(this)">-->
+                    <!--<i class="hide_eyes"></i>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<span class="password_span"></span>-->
+                    <!--<input type="password" class="form-control" id="password"  placeholder="请再次输入密码,6-16位字符" onblur="valiPwdTwo(this)">-->
+                    <!--<i class="hide_eye"></i>-->
+                <!--</div>-->
+                <!--<div class="form-group form-group_test">-->
+                    <!--<input type="text" class="form-control_text del_yzm"   placeholder="请输入手机验证码">-->
+                    <!--<button class="btn btn-info">获取短信验证码</button>-->
+                <!--</div>-->
+                <!--<div class="form-group clause">-->
+                    <!--<input type="checkbox" class="checkbox"/>-->
+                    <!--<span>我已经阅读并同意畅通卡<a href="">《注册协议》</a>条款</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<div class="register">-->
+                    <!--<button type="submit" class="btn btn-info">注&nbsp;&nbsp;&nbsp;&nbsp;册</button><br>-->
+                    <!--<a href="javascript:;" class="user_login"  data-toggle="modal" data-target="#myModal1">老用户登录入口</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--帮助主体内容-->
+<div class="container text-center help-block help">
+    <p class="col-sm-12 col-xs-12 col-lg-12" >帮助中心</p>
+    <div class="row ProcessDescription">
+        <div class="col-lg-3 col-md-3 col-sm-4" >
+            <div class="position_lc">
+            <h4>流程说明</h4>
+            <ul class="ProcessDescription_ul" id="LoutiNav">
+                <li class="ProcessDescription_active"><a href="#a1"><b></b>客户申请<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a2"><b></b>业务初审<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a3"><b></b>征信审核<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a4"><b></b>业务终审<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a5"><b></b>业务经理终审<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a6"><b></b>风控专员终审<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a7"><b></b>风控经理终审<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a8"><b></b>放款确认<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a9"><b></b>财务放款<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a10"><b></b>贷后维护<span class="glyphicon glyphicon-menu-right"></span></a>
+                <li class="cuxz"><a href="#a11"><b></b>财务销账<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                </li>
+                <li><a href="#a12"><b></b>短信<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#a13"><b></b>潜客<span class="glyphicon glyphicon-menu-right"></span></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8 Help_Center" id="Floor" style="overflow-y: scroll;height:800px;">
+            <h4 class="louceng" style="display: none" id="a1">客户申请</h4>
+            <h4 class="louceng" id="a2">业务初审</h4>
+            <p>
+                业务员对客户的基本信息进行确认，录入客户基本信息、征信申请信息，上传附件（包括
+                客户及配偶身份证正反面、征信查询授权书），并进行业务初审提交至下一级审核。
+            </p>
+            <img src="img/business.png" alt="" class="img-responsive">
+            <p> 刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新</p>
+            <p>修改：选择某个申请，点击“修改”按钮，弹出“修改”页面，修改页面信息，点击“提交”
+                按钮，信息修改
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作。业务员需上传“客户及配偶身份证正反面、征信查询授权书”。
+            </p>
+            <p>
+                查询用户附件详情：选择某个申请，点击“查询用户附件详情”按钮，弹出“查询用户附件
+                详情”页面，可以查看到所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                审批流水：选择某个申请，点击“审批流程”按钮，弹出“审批流程”页面，可以查看该
+                申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”；若该申请已经完成征信审核，则可以查看到“征信信息”
+                ；若业务员已完成业务终审，则可以看到“融资信息”、“合同信息”
+            </p>
+            <p>
+                查询：可以根据查询条件，进行筛选
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <h4 class="louceng" id="a3">征信审核</h4>
+            <p>
+                风控专员对业务初审所提交客户信息、身份证正反两面、征信查询授权书进行审核，审核
+                无误后，风控专员对客户征信进行查询，将查询结果录入，同时上传征信报告电子文档，最后
+                给出审批结果。
+            </p>
+            <p>
+                征信录入：选择某个申请，点击“详细信息”，弹出“详细信息”页面中选择“征信信息”，
+                填写“征信结果”，点击“保存征信记录”按钮即可。
+            </p>
+            <img src="img/credit_investigation1.png" alt="" class="img-responsive">
+            <p>
+                审核：选择某个申请，点击“审核”，弹出“业务流程审核”页面，点击审核结果，选择
+                通过，则该审批通过，审核状态为“已审核”，待审环节为下一环节；若选择退回，则退回到
+                业务初审；若选择终止，则该申请终止。
+            </p>
+            <img src="img/credit_investigation2.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作。风控专员需上传“征信报告电子文档”
+            </p>
+            <p>
+                附件查看：选择某个申请，点击“附件查看”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                审批流水：选择某个申请，点击“审批流程”按钮，弹出“审批流程”页面，可以查看该
+                申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”、“征信信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <h4 class="louceng" id="a4">业务终审</h4>
+            <p>
+                业务终审：征信审核结果通过后，业务员将客户融资需求信息和合同基本信息进行录入，
+                上传业务申请表、签约合同文本以及家访资料等，并进行提交至业务经理审核。
+            </p>
+            <p>
+                融资信息录入：选择某个申请，点击“融资信息”按钮，进入“融资申请信息”页面，选择
+                “融资信息”子页面，在“业务经理”、“月利率”、“融资金额”、“融资期限”中输入正确
+                数据，自动获取“还款方式”、“每期还款”、“手续费”、“备注”，点击“保存并进入签订
+                合同”按钮，跳转到“合同信息”子页面，“融资信息”子页面内容只能看不能修改。
+            </p>
+            <img src="img/audit01.png" alt="" class="img-responsive">
+            <p>
+                签订合同：1、选择某个申请，点击“签订合同”按钮，进入“融资申请信息”页面，选择
+                “合同信息”子页面，在“标的物”、“价格总额”中输入正确数据，点击“确定”按钮，提示
+                “融资信息尚未录入保存，请先录入保存融资信息”，点击“确定”按钮，跳转到“融资信息”
+                子页面；
+            </p>
+            <img src="img/audit02.png" alt="" class="img-responsive">
+            <p>刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新</p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作。业务员需上传“业务申请表、签约合同文本以及家访资料”。
+            </p>
+            <p>
+                附件查看：选择某个申请，点击“附件查看”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                查询审批流水：选择某个申请，点击“查询审批流程”按钮，弹出“审批流程”页面，可以
+                查看该申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该申
+                请的“客户信息”和“车辆信息”、“征信信息”、“融资信息”、“合同信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <h4 class="louceng" id="a5">业务经理终审</h4>
+            <p>
+                业务经理对业务终审单据进行审批并给出审批结果
+            </p>
+            <p>
+                审核：选择某个申请，点击“审核”，弹出“业务流程审核”页面，点击审核结果，选择
+                通过，则该审批通过，审核状态为“已审核”，待审环节为下一环节；若选择退回，则退回到
+                业务初审；若选择终止，则该申请终止。
+            </p>
+            <img src="img/assessor.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作
+            </p>
+            <p>
+                查询附件：选择某个申请，点击“查询附件”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                查询审批流水：选择某个申请，点击“查询审批流程”按钮，弹出“审批流程”页面，可以
+                查看该申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”、“征信信息”、“融资信息”、“合同信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <p>
+                查询：可以根据查询条件，进行筛选
+            </p>
+
+            <h4 class="louceng" id="a6">风控专员终审</h4>
+            <p>
+                风控专员对业务终审单据进行审批并给出审批结果
+            </p>
+            <p>
+                审核：选择某个申请，点击“审核”，弹出“业务流程审核”页面，点击审核结果，选择
+                通过，则该审批通过，审核状态为“已审核”，待审环节为下一环节；若选择退回，则退回到
+                业务初审；若选择终止，则该申请终止。
+            </p>
+            <img src="img/commissioner.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作
+            </p>
+            <p>
+                附件查看：选择某个申请，点击“附件查看”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                审批流水：选择某个申请，点击“审批流程”按钮，弹出“审批流程”页面，可以查看该
+                申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”、“征信信息”、“融资信息”、“合同信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <p>
+                查询：可以根据查询条件，进行筛选
+            </p>
+            <h4 class="louceng" id="a7">风控经理终审</h4>
+            <p>
+                风控经理对业务终审单据进行审批并给出审批结果
+            </p>
+            <p>
+                审核：选择某个申请，点击“审核”，弹出“业务流程审核”页面，点击审核结果，选择
+                通过，则该审批通过，审核状态为“已审核”，待审环节为下一环节；若选择退回，则退回到
+                业务初审；若选择终止，则该申请终止。
+            </p>
+            <img src="img/controllor_manager.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作
+            </p>
+            <p>
+                附件查看：选择某个申请，点击“附件查看”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                审批流水：选择某个申请，点击“审批流程”按钮，弹出“审批流程”页面，可以查看该
+                申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”、“征信信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+                查询：可以根据查询条件，进行筛选
+            </p>
+            <h4 class="louceng" id="a8">放款确认</h4>
+            <p>
+                商务助理上传车辆保单、抵押办理相关资料上传及审核上传资料完整，确认资料齐全后，
+                完成提交至放款环节
+            </p>
+            <p>
+                放款确认：选择某个申请，点击“提交”按钮，弹出确认页面，点击“否”按钮，返回至原
+                页面，点击“是”，则放款确认提交。业务初审；若选择终止，则该申请终止。
+            </p>
+            <img src="img/make_loans.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作
+            </p>
+            <p>
+                查询附件：选择某个申请，点击“附件查看”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                审批流水：选择某个申请，点击“审批流程”按钮，弹出“审批流程”页面，可以查看该
+                申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”、“征信信息”、“融资信息”、“合同信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <p>
+                查询：可以根据查询条件，进行筛选
+            </p>
+            <h4 class="louceng" id="a9">财务放款</h4>
+            <p>
+                财务对需要放款金额及放款账号进行核实，核实后完成放款
+            </p>
+            <p>
+                审核：1、选择某个申请，点击“审核”，弹出确认页面，点击“否”按钮，返回至原页面，
+                点击“是”，若信息不完善，则给予提示信息，并且点击“确定”按钮，跳转到“完善合同信息”
+                页面，输入时间后，点击“保存”按钮，合同信息完善成功；
+                2、选择某个申请，点击“完善合同信息”，跳转到“完善合同信息”页面，输入时间后，
+                点击“保存”按钮，合同信息完善成功；
+                3、选择某个申请，点击“审核”，弹出确认页面，点击“否”按钮，返回至原页面，点击
+                “是”，若信息已完善，则跳转至“业务流程审核”页面，选择通过，则该审批通过，审核状态
+                为“已审核”，待审环节为下一环节；若选择退回，则退回到业务初审；若选择终止，则该申请
+                终止。
+            </p>
+            <img src="img/financing.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                上传附件：选择某个申请，点击“上传附件”按钮，弹出“上传附件”页面，可以进行
+                “添加文件”、“开始上传”、“停止上传”、“清空列表”操作
+            </p>
+            <p>
+                查询附件：选择某个申请，点击“查询附件”按钮，弹出“附件查看”页面，可以查看到
+                所有的附件，可点击“下载”、“删除”、“批量下载”等操作
+            </p>
+            <p>
+                查询审批流水：选择某个申请，点击“查询审批流程”按钮，弹出“审批流程”页面，可以
+                查看该申请的所有审核流水
+            </p>
+            <p>
+                详细信息：选择某个申请，点击“详细信息”按钮，弹出“详细信息”页面，可以查看该
+                申请的“客户信息”和“车辆信息”、“征信信息”、“融资信息”、“合同信息”
+            </p>
+            <p>
+                业务申请状态：申请列表中显示“审核状态”、“待审环节”
+            </p>
+            <p>
+                查询：可以根据查询条件，进行筛选
+            </p>
+            <h4 class="louceng" id="a10">贷后维护之财务销账</h4>
+            <p>资产管理部门对贷后信息进行维护</p>
+            <p>
+                财务销账：财务按照约定时间点从客户约定扣款银行卡进行扣款，并将扣款结果导入，完成
+                财务销账。
+            </p>
+            <h4 class="louceng" id="a11"></h4>
+            <p>
+                点击“选择导入文件”，弹出“导入Excel”子页面，选择“还款期数”及要导入进行销账的
+                excel文件，点击“导入”，导入成功后，该期数的金额状态由“未还款”变为“已还款”，若
+                导入的excel文件中包含的数据存在错误，则自动下载XX期销账错误信息清单.xls
+            </p>
+            <img src="img/maintain.png" alt="" class="img-responsive">
+            <p>刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新</p>
+            <p>查询：可以根据查询条件，进行筛选</p>
+            <h4 class="louceng" id="a12">短信</h4>
+            <p> &nbsp; &nbsp; &nbsp; 后台人员点击<span>“新增”</span>按钮，即可进入<span>“新增个体短信服务用户”</span>页面，输入<span>“姓名”</span>和
+                <span>“手机号码”</span>，点击<span>“确定”</span>按钮，即可添加到短信服务名单列表中，系统会在特定时间发送
+                管理员编写的引导性信息给用户。
+                <br> &nbsp; &nbsp; &nbsp; 如果在<span>“新增个体短信服务用户”</span>页面，输入的姓名、手机号码错误，可以点击重置按钮，
+                一键重置输入的信息。
+            </p>
+            <img src="img/short_message.png" alt="" class="img-responsive">
+            <p>
+                刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新
+            </p>
+            <p>
+                下载短信模板文件：点击“下载短信模板文件”，可以下载excel模板文件
+            </p>
+            <p>
+                导入短信文件：点击“导入短信文件”，弹出“导入Excel”选择要导入的短信文件，点击导入，实现导入操作
+            </p>
+            <p>
+                查询：可以根据查询条件，进行筛选
+            </p>
+            <h4 class="louceng" id="a13">潜客</h4>
+            <p>弘高已被评级、存在信用额度的潜在用户。</p>
+            <p>点击“弘高原始客户数据导入”，进入该页面，点击“导入弘高潜客Excel文件”按钮，
+                选择需要导入的文件，点击“导入”按钮，即可导入数据。
+            </p>
+            <img src="img/Potential_guest1.png" alt="" class="img-responsive">
+            <p><span>DMD数据导入及弘高原始客户数据导出</span></p>
+            <p>点击“DMD数据导入及弘高原始客户数据导出”，进入该页面，点击“导入DMD潜客
+                Excel文件”按钮，选择需要导入的文件，点击“导入”按钮，即可导入数据。
+            </p>
+            <img src="img/Potential_guest2.png" alt="" class="img-responsive">
+            <p>
+                点击“DMD数据导入及弘高原始客户数据导出，进入该页面，点击“导出弘高潜客文件”
+                按钮，弹出“导出弘高客户”页面，点击“导出月份”下拉框，选择月份，点击“确定”按钮，
+                即可导出数据。
+            </p>
+            <img src="img/Potential_guest3.png" alt="" class="img-responsive">
+            <p> <span>潜客名单</span></p>
+            <p>潜客名单：显示所有的潜客名单，可以进行查看</p>
+            <p>刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新</p>
+            <p>编辑备注：选择某个潜客，点击“编辑备注”可以进行该潜客的备注编辑</p>
+            <p><span>DMD数据派发</span></p>
+            <p>DMD数据派发：查看所有的DMD客户，并进行派发</p>
+            <p>刷新：点击刷新按钮，“申请记录”的列表信息进行数据刷新</p>
+            <p>进行派发：点击“进行派发”，选择派发人员，进行派发操作</p>
+        </div>
+    </div>
+</div>
+<div id="goTop">Top</div><!--点击回到顶部-->
+<footer class="panel-footer text-center navbar-fixed-bottom">
+       湘ICP证123455号 ETC2018-2016 畅通卡（湖南）有限公司
+</footer>
+<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+//    $(".ProcessDescription_ul li").click(function(){
+//        $(this).addClass("ProcessDescription_active").siblings("li").removeClass("ProcessDescription_active");
+//    })
+//    var oNav = $('#LoutiNav');//导航壳
+//    var aNav = oNav.find('li');//导航
+//    var aDiv = $('#Floor .louceng');//楼层
+//    //回到顶部
+//    $(window).scroll(function(){
+//        var winH = $(window).height();//可视窗口高度
+//        var iTop = $(window).scrollTop();//鼠标滚动的距离
+//
+//        if(iTop>=$('#header').height()){
+//            oNav.fadeIn();
+//        }else{
+//            oNav.fadeOut();
+//        }
+//    })
+//    //点击回到当前楼层
+//    aNav.click(function(){
+//        var t = aDiv.eq($(this).index()).offset().top;
+//        $('body,html').animate({"scrollTop":t},500);
+//        $(this).addClass('active').siblings().removeClass('active');
+//    });
+</script>
+<script>
+    $(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function() {
+                $(window).scrollTop() > 100 ? $("#goTop").fadeIn(1500) : $("#goTop").fadeOut(1500);
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#goTop").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+        });
+    });
+</script>
+</body>
+</html>

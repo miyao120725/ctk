@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.help>p{
+    padding: 20px;
+    background: #1FA4E6;
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+}
+.ProcessDescription{
+    border: 1px solid #ddd;
+}
+.Help_Center{
+    border-left: 1px solid #ddd;
+    padding: 0.5% 0% 3% 1%;
+}
+.Help_Center h4{
+    text-align: left;
+    font-weight: bold;
+    color:#646464;
+    margin-bottom:2%;
+}
+.Help_Center p{
+    text-align: left;
+    padding-left:5%;
+    margin-top:2%;
+}
+.Help_Center span {
+    font-weight: 900;
+    font-size: 16px;
+}
+.Help_Center img{
+    padding-left:5%;
+}
+.ProcessDescription ul li{
+    text-align: left;
+    list-style: none;
+}
+.ProcessDescription ul{
+    padding: 0;
+}
+.ProcessDescription ul li a{
+    display: block;
+    padding: 10px;
+    color: #646464;
+    width: 100%;
+}
+.ProcessDescription ul li a:hover{
+    color: #fff!important;
+    background: #1FA4E6!important;
+}
+.ProcessDescription ul li:hover b{
+    background-color: #1FA4E6;
+}
+.ProcessDescription>div>.position_lc>h4{
+    text-align: left;
+    padding-left: 20px;
+}
+.ProcessDescription_ul li b{
+    width: 4px;
+    height: 4px;
+    background-color: #ABABAB;
+    display: inline-block;
+    margin-right: 26%;
+}
+.ProcessDescription_ul li a span{
+    color: #fff;
+    float: right;
+}
+.ProcessDescription_active a ,.ProcessDescription_active a>b{
+    color: #fff!important;
+    background: #1FA4E6!important;
+}
+.cuxz{
+    margin-left: 18%;
+}
+#goTop{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+}

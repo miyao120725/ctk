@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/***
+**    提醒页面
+*/
+h4 span{
+    color: red;
+}
+.tixin{
+    border: 1px solid #999;
+}
+.tixin_s{
+    margin: 20px;
+}
+.tixin_s div{
+    line-height: 40px;
+}
+.tixin_s .tixin_sb{
+    margin-bottom: 20px;
+}
+.tixin_s div div{
+    float: left;
+}
+@media (min-width:762px  ) and (max-width: 992px) {
+    .tixin_s{
+        margin:0!important;
+    }
+    .tixin_s,.tixin{
+        padding:0;
+    }
+    .tixin_s div{
+        padding: 0;
+    }
+}
+@media (max-width:762px  ){
+    .tixin_s,.tixin{
+        padding:0;
+    }
+    .tixin_s{
+        margin:0!important;
+    }
+    .tixin_s .text-right{
+        text-align: left!important;
+    }
+}
+.tixin_bao{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/***
+**    个人信息
+*/
+.geren div label{
+    margin-left:50px;
+}
+.container .geren{
+    padding:0;
+}
+@media (max-width:756px) {
+    .geren div label{
+        margin-left:20px!important;
+    }
+}

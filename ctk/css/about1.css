@@ -1,0 +1,76 @@
+/* 小屏幕（平板，大于等于 768px） */
+body,html{
+	height:100%}
+.xiaoban_xs{
+	display:none;
+	padding:0}
+.xiaoban{
+	padding:0}
+.about_foot div,p{
+	font-size:14px}
+.conten_f{
+	height:100%;
+	padding:0
+	}
+.conten_f .tab_right{
+	border-left:#ddd 1px solid;
+	height:100%}
+
+.conten_f .tab_left ul li{
+	border-bottom:#ddd 1px solid;
+	font-size:14px;
+	padding-left:20px;
+	list-style-type:square;
+	list-style-position:inside;
+	color:#727272;
+	}
+.conten_f .tab_left ul li:first-child{
+	color:#1FA4E6}
+.conten_f .tab_left ul li a{
+	color:#727272;
+	margin:0;
+	padding:0;
+	line-height:40px;
+	}
+
+.conten_f .tab_right #home,#profile,#messages{
+	background:#FFF}
+@media screen and (max-width:767px){
+	.xiaoban,.about_ban{
+		display:none;
+	}
+	.xiaoban_xs{
+		display:block}
+	.conten_f .tab_left ul li{
+	float:left;
+	font-size:16px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	padding-left:0;
+	border-left:#999 1px solid;
+	border-bottom:#CCC 1px solid;
+	list-style: none !important;
+	}
+	.conten_f .tab_left ul .active{
+	border-bottom:#20b4fd 2px solid;
+	background:#FFF}
+	.conten_f .tab_left ul li a{
+	text-align:center;
+	display:block
+	}
+    .conten_f .tab_left ul .biankuan{
+		border-left:0;}
+	.conten_f .tab_right{
+	border-left:0;
+	margin-top:50px;
+		margin-bottom:50px;
+	}
+}
+.tablist_ul{
+		padding-left:0!important;
+	}
+
+.navbar-nav_lj li a{
+	font-size: 16px!important;
+}

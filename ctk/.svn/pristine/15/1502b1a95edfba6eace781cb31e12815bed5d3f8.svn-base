@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>畅通卡</title>
+    <link rel="stylesheet" href="css/bootstrap1.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+    <![endif]-->
+    <style>
+        .placeholder{
+            color: #bfbfbf;
+        }
+        /*这是firefox下placeholder的字体颜色*/
+        ::-moz-placeholder {
+            color: #bfbfbf;
+        }
+        /*这是webkit下placeholder的字体颜色*/
+        ::-webkit-input-placeholder {
+            color: #bfbfbf;
+        }
+        .checkbox_input{
+            border: none!important;
+            outline: none!important;
+            vertical-align: -3px!important;
+        }
+        .checkbox_input:focus{
+            border: none!important;
+            outline: none!important;
+        }
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+<body>
+<!--响应式导航-->
+<div class="navbar navbar-default navbar-fixed-top";><!--整个导航条,贯穿整个页面的背景条-->
+    <div class="container">
+        <div class="navbar-header navbar_lj";><!--导航条的头部,包含logo和折叠指示-->
+            <!--logo-->
+            <a href="" class="navbar-brand"><img src="img/logo_2.png" alt=""></a>
+            <!--折叠菜单的触发按钮(汉堡包)-->
+            <a class="navbar-toggle glyphicon glyphicon-list btn btn-link"  data-toggle="collapse" data-target="#navbar_1"></a>
+            <a class="navbar-toggle glyphicon glyphicon-user btn btn-link"   data-toggle="modal" data-target="#myModal1" ></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_1"><!--导航的具体内容:展示的或者折叠的具体内容-->
+            <ul class="nav navbar-nav navbar-nav_lj">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="sijiache.html">私家车</a></li>
+                <li><a href="huoche.html">货车</a></li>
+                <li><a href="personal.html">个人中心</a></li>
+                <li><a href="about1.html">关于我们</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+                <!--添加导航栏目请直接添加以下标签--<li><a href="">新增栏目</a></li>---->
+            </ul>
+            <ul class="nav navbar-nav navbar-nav_lj navbar-nav_lj_right navbar-right">
+                <li><a href="javascript:;" data-toggle="modal" data-target="#myModal1">登录</a></li>
+                <li><a href="javascript:;"  data-toggle="modal" data-target="#myModal2">注册</a></li>
+                <li><a href="javascript:;" class="glyphicon glyphicon-earphone navbar-nav_lj_del">96512</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--   左边悬浮框  -->
+<div class="suspend">
+    <div class="weixin_er">
+        <img class="" src="img/erwei.png">
+    </div>
+    <div class="erwei_ma">
+        <img class="" src="img/erwei.png">
+    </div>
+    <div id="goTop">Top</div><!--点击回到顶部-->
+</div>
+<!--首页主体-->
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 banner_btn">
+            <img class="banner_img" src="img/banner_3.jpg" alt="">
+            <img class="banner-img_m" src="img/banner.mobile.jpg" alt="">
+            <div class="col-sm-6 jisuan">
+                    <div class="col-sm-8 col-sm-offset-1 jisuan_qi">
+                        <form class="form-horizontal">
+                            <div class="dropdown row"style="">
+                                <label  class="col-sm-4 control-label TermOfLoan_text">办卡类型：</label>
+                                <div class="TermOfLoan">
+                                    <input type="text" class="form-control ipticon dropdown_inp col-sm-6" value="畅通卡" aria-label="..." >
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                    <ul class="dropdown_ul dropdown-menu">
+                                        <li class="selectMonth1">畅通卡</li>
+                                        <li class="selectMonth1">畅通卡</li>
+                                        <li class="selectMonth1">畅通卡</li>
+                                        <li class="selectMonth1 dropdown_ul_active">畅通卡</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label  class="col-sm-4 control-label">借款金额：</label>
+                                <div class="col-sm-6 input-group">
+                                    <input type="number" class="form-control" min="0"  aria-describedby="an" placeholder="请输入您的借款金额">
+                                    <span class="input-group-addon" id="an">万元</span>
+                                </div>
+                            </div>
+
+                            <!---->
+                            <!--<div class="row">-->
+                                <!--<label class="control-label col-sm-4 TermOfLoan_text">借款期限：</label>-->
+                                <!--<div class="col-sm-6">-->
+                                    <!--<div class="input-group TermOfLoan">-->
+                                        <!--<input type="text" class="form-control dropdown-toggle" aria-label="..."  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                                        <!--<div class="input-group-btn">-->
+                                            <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>-->
+                                            <!--<ul class="dropdown-menu dropdown-menu-right">-->
+                                                <!--<li><a href="#">4个月</a></li>-->
+                                                <!--<li><a href="#">6个月</a></li>-->
+                                                <!--<li><a href="#">12个月</a></li>-->
+                                                <!--<li><a href="#">24个月</a></li>-->
+                                                <!--<li><a href="#">36个月</a></li>-->
+                                            <!--</ul>-->
+                                        <!--</div>&lt;!&ndash; /btn-group &ndash;&gt;-->
+                                    <!--</div>&lt;!&ndash; /input-group &ndash;&gt;-->
+                                <!--</div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+                            <!--&lt;!&ndash;&ndash;&gt;-->
+                            <div class="dropdown row">
+                                <label  class="col-sm-4 control-label TermOfLoan_text">贷款期限：</label>
+                                <div class="TermOfLoan">
+                                    <input type="text" class="form-control ipticon dropdown_inp col-sm-6" value="12个月" aria-label="..." >
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                    <ul class="dropdown_ul dropdown-menu">
+                                        <li>4个月</li>
+                                        <li>6个月</li>
+                                        <li class="dropdown_ul_active">12个月</li>
+                                        <li>24个月</li>
+                                        <li>36个月</li>
+                                        <li>48个月</li>
+                                        <li>60个月</li>
+                                        <li>72个月</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="row form-group jisuan_qi_shu_t">
+                                <label  class="col-sm-4 control-label">总利息：</label>
+                                <div class="col-sm-6">
+                                   21656元
+                                </div>
+                            </div>
+                            <div class="row form-group jisuan_qi_shu_t">
+                                <label  class="col-sm-4 control-label">手续费：</label>
+                                <div class="col-sm-6">
+                                    21656元
+                                </div>
+                            </div>
+                            <div class="row form-group jisuan_qi_shu">
+                                <label  class="col-sm-4 control-label">每月还款：</label>
+                                <div class="col-sm-6">
+                                    15415元
+                                </div>
+                            </div>
+                        </form>
+                        <input class="col-sm-6 col-sm-offset-3 btn btn-group btn-primary banka" type="button" value="我要办卡">
+                    </div>
+
+            </div>
+           <!--<div>-->
+                <!--<div class="col-sm-2 col-sm-offset-3 col-md-offset-4 col-xs-6 denglu_ba">-->
+                     <!--<div class="col-sm-4 col-xs-2"></div>-->
+                     <!--<input class="col-sm-6" type="button" data-toggle="modal" data-target="#myModal1">-->
+                     <!--<div class="col-sm-2 col-xs-1"></div>-->
+                 <!--</div>-->
+                 <!--<div class="col-sm-2 col-sm-offset-6 col-xs-6 col-xs-offset-6 zhuche_ba">-->
+                      <!--<div class="col-sm-2 col-xs-1"></div>-->
+                      <!--<input class="col-sm-6" type="button"  data-toggle="modal" data-target="#myModal2">-->
+                      <!--<div class="col-sm-4 col-xs-2"></div>-->
+                 <!--</div>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+<!------添加主体内容请写到此处------>
+
+    <!--<div class="row  transverse_line">-->
+        <!--<span class="col-md-5 col-sm-5 col-lg-5 col-xs-4"></span>-->
+        <!--<h3 class="col-md-2 col-sm-2 col-lg-2 col-xs-4 text-center">为什么选择我们</h3>-->
+        <!--<span class="col-md-5  col-lg-5 col-xs-4 col-sm-5"></span>-->
+    <!--</div>-->
+
+
+    <!--计算利息-->
+  <div class="container jisuan_qi_yi ">
+    <div class="col-xs-12" >
+        <form class="form-horizontal">
+            <div class="dropdown row mobile_dropdown">
+
+                <label  class="col-sm-4 control-label TermOfLoan_text">办卡类型：</label>
+                <div class="TermOfLoan">
+                    <input type="text" class="form-control ipticon dropdown_inp col-xs-6" id="periodsSelect1"
+                           name="periodsSelect1" value="3畅通卡" readonly
+                           aria-label="...">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                    <ul class="dropdown_ul dropdown-menu">
+                        <li class="selectMonth1">畅通卡</li>
+                        <li class="selectMonth1">畅通卡</li>
+                        <li class="selectMonth1">畅通卡</li>
+                        <li class="selectMonth1 dropdown_ul_active">畅通卡</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row form-group">
+                <label  class="control-label text-right">借款金额：</label>
+                <div class=" input-group">
+                    <input type="number" class="form-control" min="0"  aria-describedby="basic-addon3" placeholder="请输入您的借款金额">
+                    <span class="input-group-addon" id="basic-addon3">元</span>
+                </div>
+            </div>
+            <div class="dropdown row mobile_dropdown">
+
+                <label class="col-xs-12 control-label TermOfLoan_text">贷款期限：</label>
+
+                <div class="TermOfLoan">
+
+                    <input type="text" class="form-control ipticon dropdown_inp col-xs-6" id="periodsSelect1"
+                           name="periodsSelect1" value="36个月" readonly
+                           aria-label="...">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                    <ul class="dropdown_ul dropdown-menu">
+                        <li class="selectMonth1">6个月</li>
+                        <li class="selectMonth1">12个月</li>
+                        <li class="selectMonth1">24个月</li>
+                        <li class="selectMonth1 dropdown_ul_active">36个月</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row form-group jisuan_qi_shu_t">
+                <label  class="control-label text-right">总利息：</label>
+                <div>
+                    21656元
+                </div>
+            </div>
+            <div class="row form-group jisuan_qi_shu_t">
+                <label  class="col-sm-4 control-label">手续费：</label>
+                <div class="col-sm-6">
+                    21656元
+                </div>
+            </div>
+            <div class="row form-group jisuan_qi_shu">
+                <label  class="control-label text-right">每月还款：</label>
+                <div>
+                    15415元
+                </div>
+
+            </div>
+        </form>
+        <input class="col-xs-6 col-xs-offset-3 btn btn-group btn-primary banka" type="button" value="我要办卡">
+    </div>
+  </div>
+
+
+    <!--我们的产品-->
+
+    <div class="container  transverse_line  chanpi">
+        <span class="col-md-4 col-sm-4 col-lg-4 col-xs-3"></span>
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-6 text-center">
+           <h3 class="col-md-12 col-sm-12 col-lg-12 col-xs-12 text-center"style="font-size: 30px"><span>产品</span>系列</h3>
+            <p class="text-center">PRODUCT SERIES</p>
+            <div class="glyphicon glyphicon-triangle-bottom"></div>
+        </div>
+        <span class="col-md-4  col-lg-4 col-xs-3 col-sm-4"></span>
+    </div>
+
+    <!--畅通-弘高联名卡-->
+
+    <div class="container chanpi_xi" >
+        <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 text-center chanpi_xi_r"style="">
+            <div class="col-sm-12 col-xs-12 text-center">
+                <h4 class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center" style="font-size: 26px">畅通-弘高联名卡</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container  transverse_line  chanpi">
+        <div class="col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4 text-center">
+            <h3 class="col-md-12 col-sm-12 col-lg-12 col-xs-12 text-center">产品介绍</h3>
+            <p class="text-center">PRODUCT INTRODUCTION</p>
+            <div class="glyphicon glyphicon-triangle-bottom"></div>
+        </div>
+    </div>
+
+     <div class="col-sm-12 hongao_b" style="background: #edf8ff">
+         <div class="container hongao_bx">
+             <img class="col-sm-12 hongao_pc" src="img/div1.png">
+             <img class="col-xs-12 hongao_yi" src="img/div5.png" style="margin: 10px auto">
+             <img class="col-xs-12 hongao_yi" src="img/div4.png" style="margin: 10px auto">
+         </div>
+     </div>
+                <!--<div class="col-sm-6  col-xs-12 panel panel-default geren geren_y">-->
+                    <!--<div class="col-sm-12 panel-body">-->
+                        <!--<h3>畅通-弘高联名卡:</h3>-->
+                        <!--<div>&nbsp;&nbsp;是畅通公司为弘高融资租赁公司的私家车贷款客户开发的一款金融产品。只要您是弘高的私家车客户，只需要通过一个电话，或者访问畅通门户，或者微信即可随时申请一笔授信资金，资金可以灵活使用，不限制用途。</div>-->
+                       <!--<div>&nbsp;&nbsp;-->
+    <!--授信资金使用费率低廉，低至月息八厘；只需要向业务员提交身份证正反面复印件等基本资料即可，手续简单；授信额度可以根据您的实际情况，高达20万元。</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                 <!--<div class="col-sm-6  col-xs-12 panel panel-default geren geren_y">-->
+                     <!--<div class="col-sm-12 panel-body">-->
+                        <!--<h3> 产品特点：</h3>-->
+                         <!--<p>手续简：通过门户/微信/电话提交姓名和身份证号即可；</p>-->
+                         <!--<p>费用低：月息低至八厘；</p>-->
+                         <!--<p>审批快：最快六十分钟放款</p>-->
+                         <!--<p>额度高：授信额度高达20万</p>-->
+                     <!--</div>-->
+                 <!--</div>-->
+
+
+
+    <!-- <div class="row transverse_bj own_product chanpi_f">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="img/car (2).png" alt=""/><br>
+                <button class="btn">立即申请</button>
+            </div>
+            <div class="col-md-6">
+                <img src="img/shentu (2).png" alt=""/><br>
+                <button class="btn">立即申请</button>
+            </div>
+        </div>
+    </div> -->
+    <!--我们的流程-->
+    <!--<div class="row  transverse_line">-->
+        <!--<span class="col-md-5 col-sm-5 col-lg-5 col-xs-4"></span>-->
+        <!--<h3 class="col-md-2 col-sm-2 col-lg-2 col-xs-4 text-center">办理流程</h3>-->
+        <!--<span class="col-md-5  col-lg-5 col-xs-4 col-sm-5"></span>-->
+    <!--</div>-->
+
+             <!--产品特点-->
+          <div class="col-sm-12"style="background: #f6f6f6;padding: 20px 0">
+             <div class="col-sm-12  transverse_line  chanpi">
+                 <div class="col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4 text-center" style="position: relative">
+                     <div class="col-sm-12 col-xs-12 text-center" style="position: absolute;top: -20px;">
+                         <img class="dinwei2" src="img/jt2.png">
+                     </div>
+                     <h3 class="col-md-12 col-sm-12 col-lg-12 col-xs-12 text-center">产品特点</h3>
+                     <p class="text-center">PRODUCT FEATURES</p>
+                     <div class="glyphicon glyphicon-triangle-bottom"></div>
+                 </div>
+             </div>
+             <div class="container" >
+                 <div class="row choose">
+                     <div class="col-md-3 col-sm-3 col-xs-12">
+                         <img src="img/img1.png" alt=""/>
+                         <h4>手续简</h4>
+                         <p>通过门户/微信/电话<br>
+                             提交姓名和身份证即可</p>
+                     </div>
+                     <div class="col-md-3 col-sm-3 col-xs-12">
+                         <img src="img/img2.png" alt=""/>
+                         <h4>费用低</h4>
+                         <p>月息低至八厘</p>
+                     </div>
+                     <div class="col-md-3 col-sm-3 col-xs-12">
+                         <img src="img/img3.png" alt=""/>
+                         <h4>审批快</h4>
+                         <p>最快60分钟放款</p>
+                     </div>
+                     <div class="col-md-3 col-sm-3 col-xs-12">
+                         <img src="img/img4.png" alt=""/>
+                         <h4>额度高</h4>
+                         <p>授信额度高达20万</p>
+                     </div>
+                 </div>
+             </div>
+          </div>
+
+             <!--办理流程-->
+
+             <div class="col-sm-12  transverse_line  chanpi">
+                 <div class="col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4 text-center" style="position: relative;padding-top: 20px">
+                     <div class="col-sm-12 col-xs-12 text-center" style="position: absolute;top: 0px;">
+                          <img class="dinwei2" src="img/jt1.png">
+                     </div>
+                     <h3 class="col-md-12 col-sm-12 col-lg-12 col-xs-12 text-center">办理流程</h3>
+                     <p class="text-center">PRODUCT FEATURES</p>
+                     <div class="glyphicon glyphicon-triangle-bottom"></div>
+                 </div>
+             </div>
+             <h3 class="col-sm-12  col-xs-12 text-center"style="color: #ff8000!important;margin: 40px auto" >步骤简单，轻松搞定</h3>
+            <div class="container process">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <ul>
+                        <li><img src="img/1shenqin%20.png" alt=""></li>
+                        <!--<li>申请开户</li>-->
+                        <!--<li>登录门户或关注微信，提交姓名和身份证号码，即可申请开通畅通卡</li>-->
+                    </ul>
+                </div>
+                <div class="col-lg-1 col- md-1 col-sm-1 col-xs-12">
+                    <img src="img/jt-2.png" alt="" class="jt_pc_2">
+                    <img src="img/jt-mobile.png" alt="" class="jt_mobile_2">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <ul>
+                        <li><img src="img/2shenpi%20.png" alt=""></li>
+                        <!--<li>审批授信</li>-->
+                        <!--<li>提交完整的个人资料，获得授信额度</li>-->
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                    <img src="img/jt-2.png" alt="" class="jt_pc_2">
+                    <img src="img/jt-mobile.png" alt="" class="jt_mobile_2 ">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <ul>
+                        <li><img src="img/3fandai.png" alt=""></li>
+                        <!--<li>申请放款</li>-->
+                        <!--<li>根据审批授信额度，自由申请放款额度</li>-->
+                    </ul>
+                </div>
+               </div>
+
+
+
+    <!--其它的畅通卡-->
+
+    <!--<div class="row  transverse_line transverse_bj chanpi_xi">-->
+        <!--<span class="col-md-5 col-sm-5 col-lg-5 col-xs-4"></span>-->
+        <!--<h4 class="col-md-2 col-sm-2 col-lg-2 col-xs-4 text-center">其它畅通卡</h4>-->
+        <!--<span class="col-md-5  col-lg-5 col-xs-4 col-sm-5"></span>-->
+    <!--</div>-->
+    <div class="container chanpi_xi" style="margin-top: 100px" >
+        <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 text-center chanpi_xi_r"style="">
+            <div class="col-sm-12 col-xs-12 text-center">
+                <h4 class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center"style="font-size: 26px">其它的畅通卡</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container other_card">
+        <h3 class="col-sm-12  col-xs-12 text-center" >即将推出，欢迎关注！</h3>
+        <div class="col-sm-12 col-xs-12 row process">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <ul>
+
+                    <li><img src="img/changton-ETC.png" alt=""></li>
+                    <li class="other_card_ka">畅通-ETC卡</li>
+                    <!--<li>登录门户或关注微信，提交姓名和身份证号码，即可申请开通畅通卡</li>-->
+                </ul>
+            </div>
+            <!--<div class="col-lg-1 col- md-1 col-sm-1 col-xs-12">-->
+                <!--<img src="img/jt-2.png" alt="" class="jt_pc_2">-->
+                <!--<img src="img/jt-mobile.png" alt="" class="jt_mobile_2">-->
+            <!--</div>-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <ul>
+
+                    <li><img src="img/changton1.png" alt=""></li>
+                    <li class="other_card_ka">畅通-货车卡</li>
+                    <!--<li>提交完整的个人资料，获得授信额度</li>-->
+                </ul>
+            </div>
+            <!--<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">-->
+                <!--<img src="img/jt-2.png" alt="" class="jt_pc_2">-->
+                <!--<img src="img/jt-mobile.png" alt="" class="jt_mobile_2 ">-->
+            <!--</div>-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <ul>
+
+                    <li><img src="img/changtong.png" alt=""></li>
+                    <li class="other_card_ka">畅通-私家车卡</li>
+                    <!--<li>根据审批授信额度，自由申请放款额度</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--我们的优惠-->
+   <!--<div class=" col-sm-12 banner_fo">-->
+       <!--<img class="banner_img" src="img/youhui.png">-->
+       <!--<img class="banner-img_m" src="img/womendeyouhui.png">-->
+  <!--</div>-->
+<!------追加主体内容请写到此处------>
+    <!--立即注册-->
+    <!--页尾资讯-->
+    <div class="container">
+        <div class="row foot_information">
+            <div class="col-lg-4 col-md-4 information_new">
+                <!--<div class="AboutUs">-->
+                    <!--<h4>关于我们</h4>-->
+                    <!--<ui>-->
+                        <!--<li><a href="javascipt:;">公司介绍</a></li>-->
+                        <!--<li><a href="javascipt:;">荣誉证书</a></li>-->
+                        <!--<li><a href="javascipt:;">发展历程</a></li>-->
+                    <!--</ui>-->
+                <!--</div>-->
+                <!--<div class="News">-->
+                    <!--<h4>新闻资讯</h4>-->
+                    <!--<ul>-->
+                        <!--<li><a href="javascipt:;">新闻动态</a></li>-->
+                        <!--<li><a href="javascipt:;">行业动态</a></li>-->
+                        <!--<li><a href="javascipt:;">联系我们</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+            <div class="col-lg-4 col-md-4 ">
+                <div class="col-lg-6 col-md-6 QRcode1 text-center">
+                    <!--<img src="img/erweima.png" alt="">-->
+                    <div class="col-lg-12 col-md-12" style="font-size: 20px">联系电话：<br>0731-89679277
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 QRcode2">
+                    <img class="col-lg-12 col-md-12 col-xs-12" src="img/wx_qrcode.jpg" alt="" style="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 information_new">
+                <!--<div class="HelpCenter">-->
+                    <!--<h4>帮助中心</h4>-->
+                    <!--<ul>-->
+                        <!--<li><a href="javascipt:;">我要注册</a></li>-->
+                        <!--<li><a href="javascipt:;">我要贷款</a></li>-->
+                        <!--<li><a href="javascipt:;">咨询客服</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="PayAttentionToUs">-->
+                    <!--<h4>关注我们</h4>-->
+                    <!--<ul>-->
+                        <!--<li><a href="javascipt:;">关注微信</a></li>-->
+                        <!--<li><a href="javascipt:;">新浪微博</a></li>-->
+                        <!--<li><a href="javascipt:;">联系我们</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <!--<div class="container text-center FriendshipLink">-->
+            <!--<p>友情链接： <a href="javaxcript:;">畅通卡</a>  /  <a href="javaxcript:;">畅通卡</a>  /  <a href="javaxcript:;">畅通卡</a>  /  <a href="javaxcript:;">畅通卡</a>  /  <a href="javaxcript:;">畅通卡</a>  /  <a href="javaxcript:;">畅通卡</a> /  <a href="javaxcript:;">畅通卡</a>  /  <a href="javaxcript:;">畅通卡</a></p>-->
+        <!--</div>-->
+    </div>
+</section>
+<footer class="panel-footer text-center foot_zi">
+    湘ICP证123455号 ETC2018-2016 畅通卡（湖南）有限公司
+</footer>
+<!-- 登陆Modal -->
+<div class="modal fade loginModal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">登&nbsp;&nbsp;&nbsp;录</h2>
+            </div>
+            <div class="modal-body login_body">
+                <span></span>
+                <div class="form-group">
+                    <span class="uspan"></span>
+                    <input type="text" class="form-control" id="username" placeholder="请输入您的手机号码/邮箱">
+                </div>
+                <div class="form-group">
+                    <span class="pspan"></span>
+                    <input type="password" class="form-control" id="pswd" placeholder="请输入您的登陆密码">
+                </div>
+                <a href="#" class="text-right" style="display: block; margin-right:10px;cursor: pointer">
+                    <i class="glyphicon glyphicon-menu-left"></i>
+                    忘记密码
+                    <i class="glyphicon glyphicon-menu-right"></i>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <div class="from-group login_from_group">
+                    <button type="button" class="btn btn-info">登&nbsp;&nbsp;&nbsp;录</button>
+                    <p>没有账户？<a href="javascript:;" class="RegisterNow"  data-toggle="modal" data-target="#myModal2,#myModal1">立即注册</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--注册Modal-->
+<div class="modal fade registerModal" id="myModal2" tabindex="1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog zhuce_modal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabe12">立即注册</h2>
+            </div>
+            <div class="modal-body login_body">
+                <span class="valispan"></span>
+                <div class="form-group">
+                    <span class="phspan"></span>
+                    <input type="tel"  class="form-control" id = "tel" name = "tel" placeholder="请输入您的手机号码" onblur="valiPhone(this)">
+                </div>
+                <div class="form-group">
+                    <span class="pwdspan"></span>
+                    <input type="password"  class="form-control" id="pwd"  placeholder="请输入密码,6-16位字符"onblur="valiPwd(this)">
+                    <i class="hide_eyes"></i>
+                </div>
+                <div class="form-group">
+                    <span class="password_span"></span>
+                    <input type="password" class="form-control" id="password"  placeholder="请再次输入密码,6-16位字符" onblur="valiPwdTwo(this)">
+                    <i class="hide_eye"></i>
+                </div>
+                <div class="form-group form-group_test">
+                    <input type="text" class="form-control_text del_yzm"   placeholder="请输入手机验证码">
+                    <button class="btn btn-info">获取短信验证码</button>
+                </div>
+                <div class="form-group clause">
+                    <input type="checkbox" class="checkbox checkbox_input"/>
+                    <span>我已经阅读并同意畅通卡<a href="">《注册协议》</a>条款</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="register">
+                    <button type="submit" class="btn btn-info">注&nbsp;&nbsp;&nbsp;&nbsp;册</button><br>
+                    <a href="javascript:;" class="user_login"  data-toggle="modal" data-target="#myModal1">老用户登录入口</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(".dropdown_ul li").click(function(){
+        $(this).parent().parent().find("input").val(this.innerText);
+        $(this).addClass("dropdown_ul_active").siblings("li").removeClass("dropdown_ul_active");
+    })
+</script>
+<script>
+    $(".user_login").click(function(){
+        $(".registerModal").modal('hide');
+    })
+    $(function(){ $('input, textarea').placeholder(); });
+</script>
+<script type="text/javascript">
+    ((document.documentMode<=8)&&(navigator.userAgent.indexOf("MSIE 9.0")>0))||(navigator.userAgent.indexOf("MSIE 7.0")>0)||(navigator.userAgent.indexOf("MSIE 8.0")>0)||(navigator.userAgent.indexOf("MSIE 6.0")>0)?xinxi() : console.log("当前浏览器内核以及版本号为："+navigator.userAgent);
+    function xinxi(){
+        var alert_xinxi = $("<div class='alert_xinxi'><p class='alert_xinxi_p'>您的浏览器版本太低，请升级您的浏览器至IE9及以上版本！<br><a href='https://www.microsoft.com/zh-cn/download/internet-explorer.aspx' target='_blank'>点击此处下载</a><br/><span>本网站支持的浏览器有：谷歌浏览器、火狐浏览器、Safari浏览器、猎豹浏览器、IE9或以上版本浏览器</span></p></div>");
+        $("body").append(alert_xinxi);
+         $(".alert_xinxi").css({
+             "width":"100%",
+             "height":"100%",
+             "position":"fixed",
+             "top":"0",
+             "left":"0",
+             "backgroundImage":"url('img/zzcx.png')",
+             "overflow":"hidden"
+         });
+         $(".alert_xinxi_p").css({
+            "textAlign":"center",
+            "padding":"30px",
+            "backgroundColor":"#eee",
+            "fontSize":"24px",
+            "borderRadius":"5px",
+            "width":"50%",
+            "color":"#DC4C41",
+            "margin":"20% auto"
+         });
+         $(".alert_xinxi_p a").css({
+            "fontSize":"14px"
+         });
+         $(".alert_xinxi_p span").css({
+            "fontSize":"16px",
+            "color":"#95D115"
+         });
+    }
+</script>
+<script>
+    $(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function() {
+                $(window).scrollTop() > 100 ? $("#goTop").fadeIn(1500) : $("#goTop").fadeOut(1500);
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#goTop").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+        });
+    });
+</script>
+<noscript>
+    <div style="position:fixed;width:100%;height:100%;top:0;left:0;background-color:#eee;">
+        <p style="padding:20px;margin:20% auto; font-size:20px;width:50%;text-align:center;">抱歉，您的浏览器已禁用了JavaScript脚本，请启用JavaScript脚本后再访问此网站。
+        </p>
+    </div>
+</noscript>
+<!--计算器的应用-->
+<script>
+    $(".dropdown_ul li").click(function(){
+        $(this).parent().parent().find("input").val(this.innerText);
+        $(this).addClass("dropdown_ul_active").siblings("li").removeClass("dropdown_ul_active");
+    })
+</script>
+
+</body>
+</html>

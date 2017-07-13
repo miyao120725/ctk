@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>无标题文档</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/personal1.css">
+    <link rel="stylesheet" type="text/css" href="css/head.css">
+    <link rel="stylesheet" href="css/mycenter.css"/>
+    <style>
+        .placeholder{
+            color: #bfbfbf;
+        }
+        /*这是firefox下placeholder的字体颜色*/
+        ::-moz-placeholder {
+            color: #bfbfbf;
+        }
+        /*这是webkit下placeholder的字体颜色*/
+        ::-webkit-input-placeholder {
+            color: #bfbfbf;
+        }
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+<!--响应式导航-->
+<div class="navbar navbar-default";><!--整个导航条,贯穿整个页面的背景条-->
+    <div class="container">
+        <div class="navbar-header navbar_lj";><!--导航条的头部,包含logo和折叠指示-->
+            <!--logo-->
+            <a href="" class="navbar-brand"><img src="img/logo_2.png" alt=""></a>
+            <!--折叠菜单的触发按钮(汉堡包)-->
+            <a class="navbar-toggle glyphicon glyphicon-list btn btn-link" style="padding:0 0 2px 0; margin:20px;" data-toggle="collapse" data-target="#navbar_1"></a>
+            <a class="navbar-toggle glyphicon glyphicon-off btn btn-link" style="padding:0 0 2px 0; margin:20px;" href="index.html" ></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_1"><!--导航的具体内容:展示的或者折叠的具体内容-->
+            <ul class="nav navbar-nav navbar-nav_lj">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="daikuan1.html">我要贷款</a></li>
+                <li><a href="personal.html">个人中心</a></li>
+                <li><a href="about1.html">关于我们</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+                <!--添加导航栏目请直接添加以下标签--<li><a href="">新增栏目</a></li>---->
+            </ul>
+            <ul class="nav navbar-nav navbar-nav_lj navbar-nav_lj_right navbar-right">
+                <li><a href="javascript:;" class="glyphicon glyphicon-earphone navbar-nav_lj_del">96512</a></li>
+                <li><a href="index.html">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--二级导航-->
+<div class="Tow_navbar">
+    <div class="navbar container">
+        <ul>
+            <li class="nav_active dian_j"><a href="javascript:;">申请贷款</a></li>
+            <li class="dian_j"><a href="javascript:;">贷款记录</a></li>
+            <li class="dian_j"><a href="javascript:;">还款记录</a></li>
+            <li class="dian_j"><a href="javascript:;">还款明细</a></li>
+        </ul>
+    </div>
+</div>
+<div class="alert alert-dismissible" role="alert">
+    <div class="container">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        快去完善您的个人中心信息吧，就可以申请贷款了！
+    </div>
+
+</div>
+
+<!--个人中心-->
+<div class="container">
+    <div class="col-sm-6"style="padding: 0">
+        <div class="col-sm-12 col-xs-12 panel panel-default geren geren_y">
+            <div class="panel-heading text-center">客户信息</div>
+            <div class="panel-body">
+                <label> 用户名：</label><span>李美丽</span>
+            </div>
+            <div class="panel-body">
+                <label> 身份证号：</label><span>431145644896264623</span>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xs-12 panel panel-default geren geren_s">
+            <div class="panel-heading text-center">客户信息</div>
+            <div class="panel-body">
+                <label> 卡号：</label><span>李美丽</span>
+            </div>
+            <div class="panel-body">
+                <label> 申请日期：</label><span>李美丽</span>
+            </div>
+            <div class="panel-body">
+                <label> 身份证：</label><span>431145644896264623</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12 panel panel-default geren geren_e" style="margin-bottom: 100px" >
+        <div class="panel-heading text-center">畅通卡信息</div>
+        <div class="panel-body">
+           <label> 申请日期：</label><span>李美丽</span>
+        </div>
+        <div class="panel-body">
+            <label> 申请额度：</label><span>李美丽</span>
+        </div>
+        <div class="panel-body">
+        <label> 还款期限：</label><span>李美丽</span>
+         </div>
+        <div class="panel-body">
+            <label> 已还款项：</label><span>李美丽</span>
+        </div>
+        <div class="panel-body">
+            <label> 未还款项：</label><span>李美丽</span>
+         </div>
+        <div class="panel-body">
+            <label> 已还期数：</label><span>李美丽</span>
+        </div>
+        <div class="panel-body">
+            <label> 未还期数：</label><span>李美丽</span>
+        </div>
+    </div>
+
+</div>
+<footer class="panel-footer text-center navbar-fixed-bottom">
+    湘ICP证123455号 ETC2018-2016 畅通卡（湖南）有限公司
+</footer>
+
+<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+    $(".Tow_navbar>div>ul li").click(function(){
+        $(this).addClass("nav_active").siblings("li").removeClass("nav_active");
+    })
+    $(".loan_car_pic").click(function(){
+        $(this).attr("src","img/Car_244px_1198143_easyicon_click.png");
+        $(this).prev().css("color","#008FD7");
+        $(".loan_car_pic_truk").attr("src","img/Truck_343px_1198803_easyicon.png");
+        $(".loan_car_pic_truk").prev().css("color","#000");
+    })
+    $(".loan_car_pic_truk").click(function(){
+        $(this).attr("src","img/Truck_343px_1198803_easyicon_click.png");
+        $(this).prev().css("color","#008FD7");
+        $(".loan_car_pic").attr("src","img/Car_244px_1198143_easyicon.png");
+        $(".loan_car_pic").prev().css("color","#000");
+    })
+    $(".determine").click(function(){
+        $(".zzc_lj_bj").css("display","none");
+    })
+
+    $(function(){ $('input, textarea').placeholder(); });
+</script>
+</body>
+</html>

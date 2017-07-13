@@ -1,0 +1,408 @@
+/****
+*   贷款申请
+***/
+
+/*****流程******/
+
+html,body{
+	font-family: Microsoft Yahei,"[PingFang]"!important;
+	height: 100%;
+}
+.daikuan_liu ul{
+	list-style:none;
+	height:30px
+	}
+.daikuan_liu ul li.daikuan_liul{
+	background:#7abd54}
+.daikuan_liu ul li span.daikuan_liul{
+	background:#7abd54;
+	opacity: 1 !important;
+	}
+.daikuan_liu ul li{
+	height:8px;
+	background:#d6d7dc;
+	border-radius:5px;
+	position:relative}
+
+.daikuan_liu ul li span{
+	height:20px;
+	width:20px;
+	color:#FFF;
+	background:#d6d7dc;
+	line-height:20px;
+	text-align:center;
+	border-radius:50%;
+	margin-top:-6px;
+	}
+.daikuan_liu ul li p{
+	position:absolute;
+	line-height:15px;
+	text-align:center;
+	width:100%;
+	top:20px;
+	left:0px;
+	}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.element {
+  .center-block();
+}
+
+/***表单设置**/
+.container h3{
+	line-height:30px;
+	text-align:center}
+
+.jiekuan_yu div{
+	padding:0 15px !important;
+}
+.form-group .col-sm-4 ul{
+	list-style:none;
+	margin:0;
+	padding:0}
+.jiekuan ul li{
+	height:30px;
+	width:40px;
+	float:left;
+	margin:0;
+	line-height:30px;
+	text-align:center;
+	margin-top:2px;
+	cursor:pointer;
+	border:#999 1px solid;
+}
+.btn-primary{
+	background: #1FA4E6;
+}
+
+.loan_pz .loan_p input{
+   display:none;
+  
+}
+.loan_pz .loan_p span{
+    height:20px;
+	width:20px;
+	margin-top:6px;
+	float:left}
+.loan_pz .loan_p label{
+    display: inline-block;
+    width:20px;
+    height:20px;
+	margin-top:5px;
+	margin-left:8px;
+	float:left;
+    background: url("../img/danxuan1.png") no-repeat 0px 3px!important;
+}
+.loan_pz .loan_p label.checked{
+    background: url("../img/danxuan2.png") no-repeat 0px 3px!important;
+}
+.form-group .col-sm-5 .loan_sfl{
+	height:14rem;
+	float:left;
+	padding-left: 0;
+	}
+.form-group .col-sm-4 .loan_sfr{
+	margin-left:2rem;
+	}
+.form-group .col-sm-4 .loan_sfl div{
+	height:10rem;
+	width:100%;
+	float:left;
+	}
+.form-group .col-sm-5 .loan_sfl label{
+	float:left;
+	height:5rem;
+	width:100%;
+	line-height:5rem;
+	text-align:center;
+	font-size:14px;
+    }
+.form-group  .btn_tijiao{
+	margin-bottom:100px}
+.file {
+    position: relative;
+    display: inline-block;
+    height:10rem;
+	width:100%;
+    background:url("../img/photo_bj.png") no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+	background-size:100% 100%;
+	background-position:center;
+}
+.file input {
+    height: 10rem;
+	width:100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+	border:0
+}
+.file:hover {
+    background:url("../img/photo_bj_hover.png") no-repeat;
+    text-decoration: none;
+	background-position:center;
+    background-size:100% 100%;
+}
+
+
+/*****  获得实时审核结果 *****/
+
+.get_results .get_results_foot td{
+	border:none;
+	}
+.get_results .get_results_foot tr{
+	border-bottom:1px #d6d7dc solid}
+.get_results_liu{
+	list-style:none;
+	margin-top:50px;
+	}
+.get_results_liu li{
+	position: relative;
+}
+.get_results_liu li.jintou{
+	margin-top: 50px;
+}
+.get_results_liu li:first-child{
+	margin-left:30px;}
+.get_results_liu li span{
+	display: block ;
+	text-align: center;
+}
+.get_results_liu li p{
+	text-align: center;
+}
+ .get_results_liu li.direction_li img{
+	 margin-top: 30px;
+	 margin-left: 10px;
+ }
+.get_results_liu li div:first-child{
+	height:50px;
+}
+.get_results_liu li div:last-child{
+	position: absolute;
+	bottom: -70px;
+	left:55px;
+	height:70px;
+	width:70px;
+	border-radius: 50%;
+	background: #D3D3D3;
+	text-align: center;
+	margin:0 auto;
+}
+.get_results_liu li div img{
+	margin-top: 19px;
+}
+ .get_results_liu li div.active{
+	 background: #2AA2EE;
+ }
+@media (min-width:767px  ) and (max-width:992px) {
+	.get_results_liu li div:last-child{
+		bottom: -70px;
+		left:27px;
+	}
+}
+@media (min-width:900px  ) and (max-width:1200px) {
+	.get_results_liu li div:last-child{
+		bottom: -70px;
+		left:40px;
+	}
+}
+@media (max-width: 767px){
+	.get_results_liu{
+		display: none;
+	}
+	.AuditSchedule{
+		display: block !important;
+	}
+}
+@media (max-width: 992px){
+	.get_results_liu li:first-child{
+		margin-left:10px !important;}
+}
+/***** 获得实时审核结果移动适配******/
+.AuditSchedule{
+	padding: 20px;
+	display: none;
+}
+.AuditSchedule>div{
+	width: 100%;
+	height: 105px;
+}
+.rds_photo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #D3D3D3;
+	text-align: center;
+}
+.rds_photo>img{
+	margin-top: 9px;
+}
+.msg_bj{
+	width: calc(100% - 50px);
+	height: 54px;
+	background: url("../img/dkdh.png") no-repeat;
+	background-size:100% 50px;
+}
+.msg_bj>p{
+	text-align: center;
+	color: #aaa;
+	line-height:50px;
+}
+.dk_solid{
+	width: 2px;
+	height: 40px;
+	background: #D3D3D3;
+	margin:5px 0px 0px 25px;
+}
+.fl{
+	float: left;
+}
+.rds-msg:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.activation .rds_photo,.activation>.dk_solid{
+	background-color: #2AA2EE;
+}
+
+/*****  获得实时审核结果 *****/
+
+.loan_success div h3 span{
+	color:red}
+
+
+/*******贷款记录*******/
+.Loan_records_foot .repayment_foot{
+	}
+.Loan_records_foot table thead th{
+	border:none;
+	background:#008fd7;
+	color:#FFF}
+.repayment_foot table thead th{
+	border:none;
+	background:#008fd7}
+.repayment_statey{
+	color:#20b4fd}
+.repayment_statew{
+	color:red}
+.daoh .pagination-sm li.active{
+	background:#03F}
+/***** 还款记录明细*******/
+.huankuan_minxi{
+	padding: 0;
+}
+.huankuan_minxi div{
+	padding: 0;
+}
+.huankuan_minxi div ul{
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.huankuan_minxi div ul li{
+	margin-top:20px;
+	padding: 0 10px;
+
+}
+.huankuan_minxi div ul li label{
+	line-height:40px ;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 1px solid #999;
+	padding: 0;
+}
+.huankuan_minxi div ul li span{
+	line-height: 30px;
+	font-size: 20px ;
+	color: red;
+	text-align: center;
+	padding: 0;
+}
+/*计算*/
+.TermOfLoan_text{
+	line-height: 50px;
+	margin-left: -5px;
+}
+
+.dropdown input{
+	width: 46.5%;
+	margin-top: 15px;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	padding-left: 10px;
+}
+.dropdown button{
+	margin: 15px 0 0 -3px;
+	background: #EEEEEE;
+	border-left: 1px solid transparent;
+}
+.dropdown_ul{
+	left: 15px;
+	top: 100%;
+	width: 48%;
+	padding: 0;
+}
+.dropdown_ul li{
+	padding: 10px;
+	cursor: pointer;
+}
+.dropdown_ul_active{
+	background: #eee;
+}
+.mobile_dropdown{
+	padding: 0 0 0 5px!important;
+}
+.mobile_dropdown input{
+	width: 78%;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	padding-left: 10px;
+	margin: 0 0 0 10px;
+}
+.yidon1_jisu{
+	display: none;
+}
+
+@media (min-width:469px  ) and (max-width: 767px) {
+	.mobile_dropdown input{
+		width: 90%;
+	}
+	.dropdown_ul{
+		left: 25px;
+		top: 100%;
+		width: 88%;
+	}
+}
+@media (max-width:470px  ){
+	.dropdown_ul{
+		left: 25px;
+		top: 100%;
+		width: 78%;
+	}
+}
+@media (max-width:767px  ){
+	.pc_jisu{
+		display:none!important;
+	}
+	.yidon1_jisu{
+		display: block;
+	}
+}
+.mobile_dropdown button{
+	margin: 0 0 0 -3px;
+}
+.mobile_dropdown div{
+	padding:0;
+}
+.mobile_dropdown label{
+	line-height: 20px;
+}

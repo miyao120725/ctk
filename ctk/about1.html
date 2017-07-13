@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>关于我们</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/about1.css">
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" href="css/index.css">
+<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!--响应式导航-->
+<div class="navbar navbar-default";><!--整个导航条,贯穿整个页面的背景条-->
+    <div class="container">
+        <div class="navbar-header navbar_lj";><!--导航条的头部,包含logo和折叠指示-->
+            <!--logo-->
+            <a href="" class="navbar-brand"><img src="img/logo_2.png" alt=""></a>
+            <!--折叠菜单的触发按钮(汉堡包)-->
+            <a class="navbar-toggle glyphicon glyphicon-list btn btn-link" style="padding:0 0 2px 0; margin:20px;" data-toggle="collapse" data-target="#navbar_1"></a>
+             <a class="navbar-toggle glyphicon glyphicon-user btn btn-link" style="padding:0 0 2px 0; margin:20px;"  data-toggle="modal" data-target="#myModal1" ></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_1"><!--导航的具体内容:展示的或者折叠的具体内容-->
+            <ul class="nav navbar-nav navbar-nav_lj">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="daikuan1.html">我要贷款</a></li>
+                <li><a href="personal.html">个人中心</a></li>
+                <li class="active"><a href="about1.html">关于我们</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+                <!--添加导航栏目请直接添加以下标签--<li><a href="">新增栏目</a></li>---->
+            </ul>
+            <ul class="nav navbar-nav navbar-nav_lj navbar-right">
+                <li><a href="javascript:;" data-toggle="modal" data-target="#myModal1">登录</a></li>
+                <li><a href="javascript:;"  data-toggle="modal" data-target="#myModal2">注册</a></li>
+                <li><a href="javascript:;" class="glyphicon glyphicon-earphone navbar-nav_lj_del">96512</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal fade loginModal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">登&nbsp;&nbsp;&nbsp;录</h2>
+            </div>
+            <div class="modal-body login_body">
+                <span></span>
+                <div class="form-group">
+                    <span class="uspan"></span>
+                    <input type="text" class="form-control" id="username" placeholder="请输入您的手机号码/邮箱">
+                </div>
+                <div class="form-group">
+                    <span class="pspan"></span>
+                    <input type="password" class="form-control" id="pswd" placeholder="请输入您的登陆密码">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="from-group login_from_group">
+                    <button type="button" class="btn btn-info">登&nbsp;&nbsp;&nbsp;录</button>
+                    <p>没有账户？<a href="javascript:;" class="RegisterNow"  data-toggle="modal" data-target="#myModal2,#myModal1">立即注册</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--注册Modal-->
+<div class="modal fade registerModal" id="myModal2" tabindex="1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog zhuce_modal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabe12">立即注册</h2>
+            </div>
+            <div class="modal-body login_body">
+                <span class="valispan"></span>
+                <div class="form-group">
+                    <span class="phspan"></span>
+                    <input type="tel"  class="form-control" id = "tel" name = "tel" placeholder="请输入您的手机号码" onblur="valiPhone(this)">
+                </div>
+                <div class="form-group">
+                    <span class="pwdspan"></span>
+                    <input type="password"  class="form-control" id="pwd"  placeholder="请输入密码,6-16位字符"onblur="valiPwd(this)">
+                    <i class="hide_eyes"></i>
+                </div>
+                <div class="form-group">
+                    <span class="password_span"></span>
+                    <input type="password" class="form-control" id="password"  placeholder="请再次输入密码,6-16位字符" onblur="valiPwdTwo(this)">
+                    <i class="hide_eye"></i>
+                </div>
+                <div class="form-group form-group_test">
+                    <input type="text" class="form-control_text del_yzm"   placeholder="请输入手机验证码">
+                    <button class="btn btn-info">获取短信验证码</button>
+                </div>
+                <div class="form-group clause">
+                    <input type="checkbox" class="checkbox"/>
+                    <span>我已经阅读并同意畅通卡<a href="">《注册协议》</a>条款</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="register">
+                    <button type="submit" class="btn btn-info">注&nbsp;&nbsp;&nbsp;&nbsp;册</button><br>
+                    <a href="javascript:;" class="user_login"  data-toggle="modal" data-target="#myModal1">老用户登录入口</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--关于我们主体内容-->
+<div class="container-fluid">
+    <div class="row">
+     <img class="col-sm-12 col-lg-12 xiaoban" src="img/xiaobanner.png">
+     <img class="col-xs-12 xiaoban_xs"   src="img/guanyu.jpg">
+     
+     </div>
+</div>
+
+
+<div class="container conten_f" style="">
+<div class="col-sm-3 col-xs-12 tab_left">
+    <ul role="tablist" class="tablist_ul">
+        <li role="presentation" class="active biankuan col-sm-12 col-xs-3">
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="tab_left_a">公司简介</a>
+       </li>
+        <li  class="col-sm-12 col-xs-3" role="presentation">
+             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">联系方式</a>
+        </li>
+        <li  class="col-sm-12 col-xs-3" role="presentation">
+            <a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab">核心团队</a>
+        </li>
+        <li  class="col-sm-12 col-xs-3" role="presentation">
+            <a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">加入我们</a>
+        </li>
+     </ul>
+</div>
+
+  <!-- Tab panes -->
+  <div class="tab-content row col-sm-9 tab_right" style="padding: 0 15px;background:white">
+   <div role="tabpanel" class="tab-pane active col-sm-10 col-sm-offset-1" id="home">
+        <div class="about_foot">
+            <div>
+                <br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;畅通-弘高联名卡是畅通公司为弘高融资租赁公司的私家车贷款客户开发的一款金融产品。只要您是弘高的私家车客户，只需要通过一个电话，或者访问畅通门户，或者微信即可
+                随时申请一笔授信资金，资金可以灵活使用，不限制用途。
+                <br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;授信资金使用费率低廉，低至月息八厘；只需要向业务员提交身份证正反面复印件等基本资料即可，手续简单；授信额度可以根据您的实际情况，高达20万元。
+            </div>
+<!--<div>-->
+ <!--&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;公司主要运营车辆智能化管理的ETC的产品、北斗导航/GPS的研发、生产、销售、安装及维护为一体的交通信息科技服务公司。通过信息技术的处理，实现车与路、车与车主、车主与车主的沟通。让汽车生活更加智能：以车主需求为核心向资源方整合基于精确地理信息的安全驾驶、指明方向、车辆在线诊断、交友、娱乐、移动增值等事实互动车联网服务！-->
+<!--</div>-->
+
+
+
+
+<!--<h4>【企业文化】：</h4>-->
+
+
+<!--<p>企业愿景：以服务市场为导向，交通信息科技为依托，节能减排、绿色环保为理念。打造一流的智能交通服务品牌。</p>-->
+
+
+<!--<p>企业情神：诚信务实、开拓创新、拼搏求臻-->
+<!--</p>-->
+
+
+<!--<p>服务理念：客户至尊、诚信为本-->
+<!--</p>-->
+
+
+<!--<p>企业使命：为客户创造价值，提供智能、便捷的车生活方式。构建节能环保的绿色交通体系-->
+<!--</p>-->
+             
+         
+        </div>
+   </div>
+
+   <div role="tabpanel" class="tab-pane col-sm-10 col-sm-offset-1" id="messages" style="background:white">
+
+        <div class="about_foot">
+            <div>
+                <br>客服电话：0731-88xxx（服务时间周一至周五，9:00-18:00）
+                <br>公司邮箱：changtong@xxx.com
+                <br>畅通官网：www.51happycard.com
+                <br>畅通微信：畅通金融
+            </div>
+        </div>     
+   </div>
+      <div role="tabpanel" class="tab-pane col-sm-10 col-sm-offset-1" id="profile1" style="background:white">
+
+          <div class="about_foot">
+              <div><br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;公司核心团队由来自于银行、金融、市场、运营、技术等行业的优秀人才组成，核心成员具有多年行业经验，对互联网金融有深厚的专业知识和丰富的市场经验。</div>
+          </div>
+      </div>
+      <div role="tabpanel" class="tab-pane col-sm-10 col-sm-offset-1" id="profile2" style="background:white">
+
+          <div class="about_foot">
+              <div>
+                  <br>畅通公司欢迎致力于互联网金融的各类英才，包括：金融、风控、运营、市场、IT等，欢迎您与我们联系！
+                  <br>联系电话：0731-888xxx（放一个易通的行政电话）
+                  <br>电子邮箱：hr@changtong.com（确认一下畅通的邮箱）
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer class="panel-footer text-center navbar-fixed-bottom">
+       湘ICP证123455号 ETC2018-2016 畅通卡（湖南）有限公司
+</footer>
+<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(".user_login").click(function(){
+        $(".registerModal").modal('hide');
+    })
+    $('.conten_f .tab_left ul li a').click(function(){
+        $(this).parent('li').css("color","#1FA4E6").siblings("li").css("color","#646464")})
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/***
+**    我要办卡
+*
+*/
+.banka_dai_tu{
+    position: relative;
+    margin: 0 auto;
+    width:450px;
+    color: #996600;
+}
+.banka_dai_tu img{
+    width:450px;
+}
+.banka_dai_tu span{
+    position: absolute;
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+}
+.banka_dai_tu  .input_l{
+    left:228px;
+    top:255px;
+}
+.banka_dai_tu  .input_c{
+    left:88px;
+    top:116px;
+    font-size: 25px;
+    letter-spacing: 8px;
+    line-height: 40px!important;
+}
+.banka_dai_tu  .input_r {
+    left: 326px;
+    top:255px;
+}
+@media (min-width:469px  ) and (max-width: 767px) {
+    .banka_dai_tu{
+        width:350px!important;
+    }
+    .banka_dai_tu img{
+        width:350px;
+    }
+    .banka_dai_tu span{
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .banka_dai_tu  .input_l{
+        left:178px;
+        top:197px;
+        font-size: 13px;
+    }
+    .banka_dai_tu  .input_c{
+        left:52px;
+        top:84px;
+        line-height: 30px!important;
+        font-size: 20px;
+    }
+    .banka_dai_tu  .input_r {
+        left:254px;
+        top:197px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 469px) {
+    .banka_dai_tu{
+        width:290px!important;
+    }
+    .banka_dai_tu img{
+        width:290px;
+    }
+    .banka_dai_tu span{
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .banka_dai_tu  .input_c{
+        left:34px;
+        top:66px;
+        line-height: 30px!important;
+        font-size: 18px;
+    }
+    .banka_dai_tu  .input_l{
+        left:148px;
+        top:164px;
+        font-size: 12px;
+    }
+    .banka_dai_tu  .input_r {
+        left: 208px;
+        top:164px;
+        font-size: 12px;
+    }
+}

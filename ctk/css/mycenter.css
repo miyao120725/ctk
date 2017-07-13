@@ -1,0 +1,70 @@
+html,body{
+    font-family: Microsoft Yahei,"[PingFang]"!important;
+}
+
+.not_filled{
+    text-align: center;
+    margin-top:30px;
+}
+.control-label{
+    padding-right:0;
+}
+.lt{
+    text-align: left;
+}
+.from_name div:first-child{
+    padding-right: 0!important;
+}
+.from_name div:last-child{
+    padding: 0!important;
+}
+.form_content{
+    overflow: hidden;
+    padding-left:30px;
+}
+.form_content h1{
+    text-align: center;
+    margin-top:30px;
+}
+.form-group{
+    padding:0px 10px;
+}
+/*个人中心表格*/
+.personal_information{
+    margin-top:30px;
+}
+.personal_information>.table>tbody>tr>td{
+    border: none !important;
+}
+.personal_information>.table>tbody>tr>td:nth-child(2){
+    width:450px;
+}
+.personal_information>.table>tbody>tr>td:first-child{
+    text-align: right;
+}
+.personal_information>.table>tbody>tr>td a,.cancel,.ensconce,.change{
+    text-decoration: underline;
+    color:#1fa4e6;
+}
+.star{
+    color: red;
+    font-size: 20px;
+}
+/*兼容iPhone4-iPhone5*/
+@media (max-width: 768px){
+    .table-responsive{
+        border: 0;
+    }
+}
+.form-control-static,.cancel,.ensconce{
+    text-align: center!important;
+}
+
+/*个人中心修改表单*/
+
+.from_name>div{
+    padding-left:0!important;
+}
+.del_yzm{
+    padding-left: 0!important;
+}

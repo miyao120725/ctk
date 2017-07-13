@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>关于我们</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/help.css">
+<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link rel="stylesheet" href="css/jquery.treeview.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+
+
+</head>
+
+<body>
+
+<!--帮助主体内容-->
+
+<div style="height: 100%;position: absolute;bottom: 0;left: 0;top: 0;right: 0;">
+    <p class="help-p text-center"><img src="images/帮助中心1.png" style="width: 37px;height: 27px;">帮助中心</p>
+    <div class="container" style="height: 89%;">
+        <div class="col-sm-12" style="background: #e4e2e3">
+            <div class="col-sm-9 col-sm-offset-3" >
+                <img src="images/帮助中心2.png" style="float: left;margin-top: 7px;height: 20px;width: 20px;">
+                <ol class="breadcrumb" style="float: left;background: #e4e2e3">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">客户</a></li>
+                    <li><a href="#">客户申请</a></li>
+                    <li class="active">门户网站</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-sm-12 help-left "style="height: 100%;" >
+            <div class="col-sm-3 help-left-pa" >
+                <ul class="help-left-u" style="margin-bottom: 100px">
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne">
+                        <a href="#s1">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">客&nbsp; &nbsp; &nbsp;户</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客户申请</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h1">门户网站 </a></li>
+                                    <li class="click-ac"><a href="#h2">微信</a></li>
+                                    <li class="click-ac"><a href="#h3">线下</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne2">
+                        <a href="#s2">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">业 务 员</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne2"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">营销服务管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h4">潜客管理 </a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客户综合查询</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h5">客户综合信息查询 </a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">贷款申请管理</a>
+                                <ul style="display: none;">
+                                    <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">贷款申请</a>
+                                        <ul style="display: none;">
+                                            <li class="click-ac"><a href="#h6" target="_new">线上贷款申请</a></li>
+                                            <li class="click-ac"><a href="#h7" target="_new">正式贷款申请</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客户融资管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h8">客户融资信息及合同签订 </a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">短信服务管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h9">短信服务</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne3">
+                        <a href="#s3">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">风控专员</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne3"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客服综合查询</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h10">客户综合信息查询</a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">业务初审管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h11">征信查询及相关结论填写 </a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">业务终审管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h12">风控专员审核</a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/index.cfm">潜客维护管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h13">DMD数据导入及弘高原始客户数据导出</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne4">
+                        <a href="#s4">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">风控经理</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne4"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客户综合查询</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h14">客户综合信息查询</a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">业务终审管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h15">风控经理审核</a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">潜客维护管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h16">潜客总览</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne5">
+                        <a href="#s5">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">商务助理</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne5"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">放贷相关管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h17">商助附件审核</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne6">
+                        <a href="#s6">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">财&nbsp; &nbsp; &nbsp; 务</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne6"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客户综合查询</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h18">客户综合信息查询</a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">放贷相关管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h19">财务确认放款</a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">贷后相关管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h20">贷后信息维护</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne7">
+                        <a href="#s7">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">业务经理</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne7"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">营销服务管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h21">DMD数据派发 </a></li>
+                                </ul>
+                            </li>
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">客户综合查询</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h22">客户综合信息查询 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="help-left-l" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne8" >
+                        <a href="#s8">
+                            <i class="glyphicon glyphicon-list help-left-i"></i>
+                            <div class="help-left-div">数据DMD分析</div>
+                            <span class="glyphicon glyphicon-chevron-right help-left-sp"></span>
+                        </a>
+                    </li>
+                    <div id="collapseOne8"  class="panel-collapse collapse in sidetree">
+                        <ul class="treeview tree">
+                            <li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="#">潜客维护管理</a>
+                                <ul style="display: none;">
+                                    <li class="click-ac"><a href="#h23">DMD数据导入及弘高原始数据导出</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-sm-9 help-right">
+                <h3 id="s1">客户</h3>
+                <h4 id="h1">门户端网站</h4>
+                <ul>
+                    <li><span>弘高客户通过“畅通钱包”网站，进行贷款申请。</span>
+                    </li>
+                    <li><span>非弘高客户通过“畅通钱包”网站，获取贷款申请联系电话，进行线下申请。</span>
+                    </li>
+                </ul>
+                <h4 id="h2">微信端</h4>
+                <ul>
+                    <li><span>弘高客户通过“畅通金融”微信公众号，进行贷款申请。</span>
+                    </li>
+                    <li><span>非弘高客户通过“畅通金融”微信公众号，获取贷款申请联系电话，进行线下申请。</span>
+                    </li>
+                </ul>
+                <h4 id="h3">线下</h4>
+                <ul>
+                    <li><span>弘高客户通过线下，进行线下贷款申请。</span>
+                    </li>
+                    <li><span>非弘高客户通过“畅通金融”微信公众号或“畅通钱包”网站获取的贷款申请联系电话，进行线下申请。</span>
+                    </li>
+                </ul>
+
+                <h3 id="s2">业务员</h3>
+                <h4 id="h4">营销服务管理 - 潜客管理</h4>
+                <img src="images/1潜客管理.png">
+                <h4 id="h5">客户综合查询 - 客户综合信息查询</h4>
+                <img src="images/2客户综合信息查询.png">
+                <h4 id="h6">贷款申请管理 - 贷款申请线 - 上线贷款申请</h4>
+                <img src="images/3贷款申请1.png">
+                <h4 id="h7">贷款申请管理 - 贷款申请线 - 正式贷款申请</h4>
+                <img src="images/3贷款申请2.png">
+                <h4 id="h8">客户融资管理 - 客户融资信息及合同签订</h4>
+                <img src="images/4客户融资信息及合同签订.png">
+                <h4 id="h9">短信服务管理 - 短信服务</h4>
+                <img src="images/5短信服务.png">
+
+                <h3 id="s3">风控专员</h3>
+                <h4 id="h10">客户综合查询 - 客户综合信息查询</h4>
+                <img src="images/1客户综合信息查询.png">
+                <h4 id="h11">业务初审管理 - 征信查询及相关结论填写</h4>
+                <img src="images/2征信查询及相关结论填写.png">
+                <h4 id="h12">业务终审管理 - 风控专员审核</h4>
+                <img src="images/3风控专员审核.png">
+                <h4 id="h13">潜客维护管理 - DMD数据导入及弘高原始客户数据导出</h4>
+                <img src="images/4DMD数据导入及弘高原始客户数据导出.png">
+
+                <h3 id="s4">风控经理</h3>
+                <h4 id="h14">客户综合查询 - 客户综合信息查询</h4>
+                <img src="images/3客户综合信息查询.png">
+                <h4 id="h15">业务终审管理 - 风控经理审核</h4>
+                <img src="images/2风控经理审核.png">
+                <h4 id="h16">潜客维护管理 - 潜客总览</h4>
+                <img src="images/3潜客总览.png">
+
+                <h3 id="s5">商务助理</h3>
+                <h4 id="h17">放贷相关管理 - 商助附件审核</h4>
+                <img src="images/1商助附件审核.png">
+
+                <h3 id="s6">财务</h3>
+                <h4 id="h18">客户综合查询 - 客户综合信息查询</h4>
+                <img src="images/4客户综合信息查询.png">
+                <h4 id="h19">放贷相关管理 - 财务确认放款</h4>
+                <img src="images/2财务确认放款.png">
+                <h4 id="h20">贷后相关管理 - 贷后信息维护</h4>
+                <img src="images/3贷后信息维护.png">
+
+                <h3 id="s7">业务经理</h3>
+                <h4 id="h21">营销服务管理 - DMD数据派发</h4>
+                <img src="images/2数据DMD分析.png">
+                <h4 id="h22">客户综合查询 - 客户综合信息查询</h4>
+                <img src="images/5客户综合信息查询.png">
+
+                <h3 id="s8">数据DMD分析</h3>
+                <h4 id="h23">潜客维护管理 - DMD数据导入及弘高原始客户数据导出</h4>
+                <img src="images/1数据DMD分析.png">
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="panel-footer text-center navbar-fixed-bottom">
+       湘ICP证123455号 ETC2018-2016 畅通钱包（湖南）有限公司
+</footer>
+<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/jquery.treeview.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $(".tree").treeview({
+            collapsed: true,
+            animated: "fast",
+            control:"#sidetreecontrol",
+            prerendered: true,
+            persist: "location"
+        });
+
+        $('.click-ac').click(function(){
+            var tet_li1=$(this).parents('div').prev('li').children('a').text();
+            var tet_li=$(this).parents('li:first').children('a').text();
+            $('.breadcrumb li').eq(1).children('a').text(tet_li1);
+            $('.breadcrumb li').eq(2).children('a').text(tet_li);
+            $('.breadcrumb li').eq(3).text($(this).text());
+        })
+    })
+
+    /*折叠插件3*/
+    $(function () { $('#collapseOne').collapse('hide')});
+    $(function () { $('#collapseOne2').collapse('hide')});
+    $(function () { $('#collapseOne3').collapse('hide')});
+    $(function () { $('#collapseOne4').collapse('hide')});
+    $(function () { $('#collapseOne5').collapse('hide')});
+    $(function () { $('#collapseOne6').collapse('hide')});
+    $(function () { $('#collapseOne7').collapse('hide')});
+    $(function () { $('#collapseOne8').collapse('hide')});
+</script>
+</body>
+</html>

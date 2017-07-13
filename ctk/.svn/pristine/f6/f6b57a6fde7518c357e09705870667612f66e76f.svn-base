@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@media (max-width: 767px){/*测试代码*/
+    .navbar-list{
+        margin-top: 80px!important;
+    }
+}
+/*
+.One_navbar{
+    height: 80px;
+    border-radius: 0px;
+}
+.navbar-list a{
+    height: 79px;
+}
+.navbar{
+    margin-bottom: 0;
+}
+*/
+/**/
+/*导航*/
+html,body{
+    font-family: Microsoft Yahei,"[PingFang]"!important;
+}
+.navbar_lj .navbar-brand img{
+    height: 42px!important;
+    width: 103px!important;
+}
+.navbar_lj .btn-link{
+    padding:0 0 2px 0;
+    padding:15px;
+}
+.navbar_lj{
+    background-color: #ffffff;
+}
+.navbar_lj a{
+    color: #20B4FD!important;
+}
+.navbar{
+    border-radius: 0px!important;
+}
+.navbar-brand{
+    margin-right: 20px;
+}
+.navbar-nav_lj{
+    margin: 0.2px -15px;
+}
+.navbar-default a{
+      font-size: 16px!important;  
+    }
+.navbar-default{
+    border:none;
+    background-color: #ffffff;
+    margin-bottom: 0;
+}
+a:focus{
+    background-color:transparent;
+    text-decoration: none!important;
+}
+a:hover{
+    background-color:transparent!important;
+    text-decoration: none!important;
+    color: #008FD7!important;
+}
+.navbar-nav_lj li a{
+    font-size: 20px;
+    line-height: 40px;
+    color: #444444;
+}
+.active{
+    background-color: transparent;
+}
+.active a{
+    background-color: transparent!important;
+    color: #1FA4E6!important;
+}
+.navbar-toggle{
+    border: none;
+    font-size: 25px;
+    padding: 17px 10px;
+    color: #fff;
+}
+.navbar-collapse{
+    overflow: hidden!important;
+}
+@media (max-width: 767px){
+    .navbar-nav_lj{
+        background-color: #F3F3F3;
+    }
+    .active{
+        background-color: #ddd;
+    }
+}
+.navbar-nav_lj_del{
+    color: #20B4FD!important;
+}
+/**/
+
+.Tow_navbar{
+    width: 100%;
+    background: #20B4FD;
+
+}
+
+/*  刚加的   */
+
+.Tow_navbar .navbar{
+    border:0!important;
+}
+
+/**/
+
+.Tow_navbar ul{
+    padding: 0!important;
+}
+.Tow_navbar li{
+    float: left;
+    list-style: none;
+    cursor: pointer;
+
+}
+.Tow_navbar li:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*兼容iPhone4-iPhone5*/
+@media (min-width: 370px){
+    .Tow_navbar li a{
+        padding: 10px;
+        font-size: 16px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .zzc_lj{/*Data(2017/07/27 15:04)*/
+        position: absolute;
+        top: -5px;
+        left: 80px;
+        z-index: 20;
+    }
+}
+@media (max-width: 369px){
+    .Tow_navbar li a{
+        padding: 10px;
+        font-size: 14px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .Tow_navbar>div{
+        padding: 0;
+    }
+    .zzc_lj{/*Data(2017/07/27 15:04)*/
+        position: absolute;
+        top: -5px;
+        left: 35px;
+        z-index: 20;
+    }
+}
+.nav_active{
+    /*background-color: #008FD7;*/
+    border-bottom:solid white 2px;
+    height:50px;
+}
+.Tow_navbar li a:hover{
+    text-decoration: none;
+    color: #fff!important;
+}
+.Tow_navbar li a:focus{
+    color: #fff;
+    text-decoration: none;
+}
+.Tow_navbar li:hover{
+    /*background-color: #008FD7;*/
+    border-bottom:2px white solid;
+    height:50px;
+}
+
+.zzc_lj_bj{/*Data(2017/07/27 15:04)*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 18;
+}
+/*@media (max-width:768px) {*/
+    /*.zzc_lj_bj{*/
+        /*top: 167px;*/
+    /*}*/
+/*}*/
+/*@media (max-width:360px) {*/
+    /*.zzc_lj_bj{*/
+        /*top: 169px;*/
+    /*}*/
+/*}*/
+/*@media (max-width:320px) {*/
+    /*.zzc_lj_bj{*/
+        /*top: 187px;*/
+    /*}*/
+/*}*/
+/*警告框*/
+.alert{
+    width:100%;
+    margin-top:-20px;
+    background-color: #f0f4f7;
+    color:#f73d3f;
+    padding:10px;
+    font-size: 14px;
+    margin-bottom:0;
+}
+@media (max-width: 767px){
+    .alert-dismissible .close{
+        position: relative;
+        top:-2px;
+        right:0px;
+    }
+    .alert{
+        padding-bottom: 0;
+    }
+    .alert>div.container,.alert p{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .alert{
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px){
+    .alert-dismissible .close{
+        position: relative;
+        top:-2px;
+    }
+}
+.zzc_lj_bj>div{
+    background:#fff;
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    box-shadow: 0px 2px 12px 0px #000;
+}
+.zzc_lj_bj>div>.row>div{
+    padding:40px;
+    color:#555;
+    margin-bottom:-8px;
+}
+.zzc_lj_bj>div{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.zzc_lj_bj>div>.row>div:first-child{
+    border-right:1px solid #ddd;
+}
+.zzc_lj_bj>div>h4{
+    font-size: 14px;
+    padding:5px 0 15px 15px;
+    border-bottom:1px solid #ddd;
+    margin-bottom:0;
+}
+.zzc_lj_bj>div>button{
+    width:50%;
+    float: left;
+    padding:10px 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #1fa4e6;
+}
+.zzc_lj_bj>div>button:first-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0;
+}
+.zzc_lj_bj>div>button:last-child{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 8px;
+}
+.zzc_lj_bj>div>button:hover{
+    background: #1fa4e6;
+    border:1px solid #1FA4E6;
+}
+.zzc_lj_bj>div>.row>div>p{
+    text-align: center;
+    padding-bottom:20px;
+}
+@media (max-width: 991px){
+    .zzc_lj_bj>div>.row>div{
+        padding-bottom:20px;
+        padding-top:10px;
+    }
+    .zzc_lj_bj>div>.row>div:first-child{
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .zzc_lj_bj>div>.row>div>p{
+        text-align: center;
+        padding-bottom:0px;
+    }
+    .loan_car{
+        margin:0;
+    }
+}
+.loan_car>div>img{
+    text-align: center;
+    cursor:pointer;
+}

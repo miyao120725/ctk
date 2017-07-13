@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>畅通卡-私家车</title>
+    <link rel="stylesheet" href="css/bootstrap1.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--响应式导航-->
+<div class="navbar navbar-default";><!--整个导航条,贯穿整个页面的背景条-->
+    <div class="container">
+        <div class="navbar-header navbar_lj";><!--导航条的头部,包含logo和折叠指示-->
+            <!--logo-->
+            <a href="" class="navbar-brand"><img src="img/logo_2.png" alt=""></a>
+            <!--折叠菜单的触发按钮(汉堡包)-->
+            <a class="navbar-toggle glyphicon glyphicon-list btn btn-link" style="padding:0 0 2px 0; margin:20px;" data-toggle="collapse" data-target="#navbar_1"></a>
+            <a class="navbar-toggle glyphicon glyphicon-user btn btn-link"  style="padding:0 0 2px 0; margin:20px;" data-toggle="modal" data-target="#myModal1" ></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_1"><!--导航的具体内容:展示的或者折叠的具体内容-->
+            <ul class="nav navbar-nav navbar-nav_lj">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="">私家车</a></li>
+                <li><a href="huoche.html">货车</a></li>
+                <li><a href="personal.html">个人中心</a></li>
+                <li><a href="about1.html">关于我们</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+                <!--添加导航栏目请直接添加以下标签--<li><a href="">新增栏目</a></li>---->
+            </ul>
+            <ul class="nav navbar-nav navbar-nav_lj navbar-nav_lj_right navbar-right">
+                <li><a href="javascript:;" data-toggle="modal" data-target="#myModal1">登录</a></li>
+                <li><a href="javascript:;"  data-toggle="modal" data-target="#myModal2">注册</a></li>
+                <li><a href="javascript:;" class="glyphicon glyphicon-earphone navbar-nav_lj_del">96512</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<p class="alert alert-danger text-center">
+    网站信息正在建设中，请敬请期待！！！
+</p>
+<div style="text-align: center">
+    <input type="button" class="btn btn-danger btn-lg" value="这里是私家车"/>
+</div>
+<script src="js/jquery.1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
